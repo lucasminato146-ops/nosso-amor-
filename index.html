@@ -4,86 +4,76 @@
   <meta charset="UTF-8">
   <title>Nossa História ❤️</title>
 
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 
   <style>
-    /* RESET */
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
 
-    /* FUNDO ROMÂNTICO */
     body {
-      height: 100vh;
       font-family: 'Poppins', sans-serif;
       background: linear-gradient(135deg, #ff9a9e, #fad0c4);
       color: #fff;
-      display: flex;
-      flex-direction: column;
     }
 
-    /* CABEÇALHO */
+    /* CABEÇALHO FIXO NO TOPO */
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px 40px;
-      background: rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(10px);
+      text-align: center;
+      padding: 30px 20px;
+      background: rgba(0,0,0,0.2);
     }
 
     header h1 {
       font-family: 'Playfair Display', serif;
       font-size: 40px;
+      margin-bottom: 10px;
     }
 
-    /* MENU */
     nav a {
-      margin-left: 25px;
+      margin: 0 10px;
       text-decoration: none;
       color: #fff;
-      font-weight: 500;
-      transition: 0.3s;
+      font-size: 18px;
     }
 
     nav a:hover {
       color: #ffe6e6;
     }
 
-    /* CONTEÚDO */
+    /* CONTEÚDO NORMAL (DESCENDO A PÁGINA) */
     main {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
+      padding: 40px 20px;
     }
 
-    /* CARD CENTRAL */
     .home {
-      background: rgba(255, 255, 255, 0.15);
-      padding: 40px;
+      max-width: 700px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.15);
+      padding: 30px;
       border-radius: 20px;
-      backdrop-filter: blur(15px);
-      max-width: 500px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
     }
 
     .home h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 50px;
+      font-size: 32px;
       margin-bottom: 20px;
+    }
+
+    .home p {
+      font-size: 18px;
+      margin-bottom: 15px;
     }
 
     .frase {
       font-style: italic;
-      margin-bottom: 15px;
+      font-size: 20px;
+      color: #fff0f0;
     }
 
-    /* BOTÃO */
     .botao {
       display: inline-block;
       margin-top: 20px;
@@ -92,29 +82,28 @@
       color: #fff;
       text-decoration: none;
       border-radius: 25px;
-      transition: 0.3s;
     }
 
     .botao:hover {
       background: #ff1e3c;
-      transform: scale(1.05);
     }
 
-    /* RODAPÉ */
     footer {
       text-align: center;
-      padding: 15px;
+      padding: 20px;
+      margin-top: 40px;
       background: rgba(0,0,0,0.2);
     }
-  </style>
 
+  </style>
 </head>
 
 <body>
 
-  <!-- CABEÇALHO -->
+  <!-- TOPO -->
   <header>
     <h1>❤️ Nós dois</h1>
+
     <nav>
       <a href="index.html">Início</a>
       <a href="galeria.html">Galeria</a>
@@ -122,7 +111,7 @@
     </nav>
   </header>
 
-  <!-- CONTEÚDO PRINCIPAL -->
+  <!-- CONTEÚDO -->
   <main>
 
     <section class="home">
