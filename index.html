@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nossa História ❤️</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
@@ -19,7 +20,6 @@
       color: #fff;
     }
 
-    /* CABEÇALHO NO TOPO (SEM FAIXA) */
     header {
       text-align: center;
       padding: 30px 20px;
@@ -42,7 +42,6 @@
       color: #ffe6e6;
     }
 
-    /* CONTEÚDO */
     main {
       padding: 40px 20px;
     }
@@ -58,37 +57,72 @@
 
     .home h2 {
       font-family: 'Playfair Display', serif;
-      font-size: 32px;
+      font-size: 40px;
       margin-bottom: 20px;
+      text-align: center;
     }
 
-
+    .home p {
+      font-size: 24px;
+      margin-bottom: 18px;
+      line-height: 1.6;
+      text-align: center;
     }
 
     .frase {
       font-style: italic;
-      font-size: 20px;
+      font-size: 26px;
       color: #fff0f0;
     }
-    }
-    }
-footer {
+
+    footer {
       text-align: center;
       padding: 20px;
       margin-top: 40px;
     }
 
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
+
+      .home {
+        padding: 22px;
+      }
+
+      .home h2 {
+        font-size: 30px;
+      }
+
+      .home p {
+        font-size: 20px;
+      }
+
+      .frase {
+        font-size: 22px;
+      }
+
+      nav a {
+        font-size: 16px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
-  <!-- TOPO -->
   <header>
     <h1>❤️ Nós dois</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
 
+  <main>
     <section class="home">
-      <h2>meu amor por voce</h2>
+      <h2>Meu amor por você</h2>
 
       <p class="frase">
         "De todas as coincidências do mundo, você foi a mais bonita."
@@ -101,15 +135,11 @@ footer {
       <p>
         Cada momento ao seu lado virou parte da minha história favorita ❤️
       </p>
-
-      <a href="galeria.html" class="botao"></a>
     </section>
-
   </main>
 
-  <!-- RODAPÉ -->
   <footer>
-    <p>Feito com amor por nós dois❤️ </p>
+    <p>Feito com amor por nós dois ❤️</p>
   </footer>
 
 </body>
